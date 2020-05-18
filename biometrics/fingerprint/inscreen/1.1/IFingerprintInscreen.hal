@@ -22,5 +22,6 @@ interface IFingerprintInscreen extends @1.0::IFingerprintInscreen {
     getHbmOffDelay() generates (int32_t delayOff);
     getHbmOnDelay() generates (int32_t delayOn);
     supportsAlwaysOnHBM() generates (bool status);
+    needsHBMonBrightnessChange() generates (bool status);
     switchHbm(bool enabled);
 };
